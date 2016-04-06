@@ -5,7 +5,9 @@ public class LabEight {
 	
 	public static void main(String[] args) {
 Scanner in = new Scanner(System.in);
-	System.out.println("Welcome to batting average calculator");
+	System.out.println("Welcome to batting average calculator!");
+	String choice = "y";
+	while (choice.equalsIgnoreCase("y"))
 	System.out.print("Enter number of times at bat:");
 		int numbAtBat= in.nextInt(); 
 	in.nextLine();
@@ -33,11 +35,10 @@ Scanner in = new Scanner(System.in);
 	double slugAve= sum/numbAtBat;
 	System.out.println(df.format(battingAve));
 	System.out.println(df.format(slugAve));
-	
-	
+	System.out.println("Another Batter? (y/n):");
+    choice = in.nextLine();
+
 	}	
-	
-	
 	
 
 }
