@@ -36,7 +36,7 @@ Scanner in = new Scanner(System.in);
 	System.out.println(df.format(battingAve));
 	System.out.println(df.format(slugAve));
 	System.out.println("Another Batter? (y/n):");
-    choice = in.nextLine();
+    choice = Validator.getString("Another Batter? (y/n):");
 
 	}	
 	
