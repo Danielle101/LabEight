@@ -9,7 +9,7 @@ Scanner in = new Scanner(System.in);
 	String choice = "y";
 	while (choice.equalsIgnoreCase("y"))
 	System.out.print("Enter number of times at bat:");
-		int numbAtBat= in.nextInt(); 
+		int numbAtBat= Validator.readValidInt();
 	in.nextLine();
 	int[] atBat= new int[numbAtBat]; 
 	System.out.println("0=out, 1=single, 2=double, 3=triple, 4=home run");
